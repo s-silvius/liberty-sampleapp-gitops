@@ -28,6 +28,6 @@ Config for installed components:
 
   `MP_MESSAGING_CONNECTOR_LIBERTY_KAFKA_SASL_JAAS_CONFIG` with value `org.apache.kafka.common.security.scram.ScramLoginModule required username="<USERNAME>" password="<PASSWORD>";`
 
-  `CONNECTION_NAME_LIST` with value `native-ha-qm-ibm-mq-qm-mq.apps.<INGRESS>(443)` for using MQ via OpenShift route, or for the service `native-ha-qm-ibm-mq.mq.svc.cluster.local(1414`
+  `CONNECTION_NAME_LIST` with value `native-ha-qm-ibm-mq-qm-mq.apps.<INGRESS>(443)` for using MQ via OpenShift route, or for the service `native-ha-qm-ibm-mq.mq.svc.cluster.local(1414)`
 
 * To access the MQ web UI, create a secret 'mqwebusersecret' with password in the mq namespace, example here: [mqwebuser-secret-example.yaml](./components/mq/base/native-ha-qm/mqwebuser-secret-example.yaml)
