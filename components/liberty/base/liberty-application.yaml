@@ -18,14 +18,12 @@ spec:
     ports:
       - port: 2809
         name: iiop
-      - port: 9402
-        name: iiops
   #serviceability:
   #  size: 5Gi
   #  storageClassName: ocs-storagecluster-cephfs
   env:
     - name: WLP_LOGGING_CONSOLE_FORMAT
-      value: TBASIC 
+      value: TBASIC
   applicationImage: >-
     ghcr.io/nordic-mvp-gitops-repos/liberty-sampleapp:latest
   expose: true
