@@ -51,10 +51,10 @@ spec:
     resources:
       limits:
         memory: 2Gi
-        cpu: 0.1
+        cpu: 100m
       requests:
         memory: 1Gi
-        cpu: 0.1
+        cpu: 100m
     mqsc:
       - configMap:
           name: native-ha-qm-configmap
