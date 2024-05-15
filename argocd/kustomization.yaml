@@ -7,7 +7,7 @@ resources:
   - argo-rolebinding.yaml
 
   - common.yaml
-  
+
   - operators
   - operands
 
@@ -19,7 +19,7 @@ patches:
     patch: |-
       - op: add
         path: /spec/template/spec/source/repoURL
-        value: https://github.com/Nordic-MVP-GitOps-Repos/liberty-sampleapp-gitops.git
+        value: https://github.com/s-silvius/liberty-sampleapp-gitops.git
       - op: add
         path: /spec/template/spec/source/targetRevision
         value: HEAD
@@ -30,7 +30,7 @@ patches:
     patch: |-
       - op: add
         path: /spec/source/repoURL
-        value: https://github.com/Nordic-MVP-GitOps-Repos/liberty-sampleapp-gitops.git
+        value: https://github.com/s-silvius/liberty-sampleapp-gitops.git
       - op: add
         path: /spec/source/targetRevision
         value: HEAD
