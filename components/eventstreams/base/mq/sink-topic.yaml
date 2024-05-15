@@ -9,7 +9,7 @@ spec:
   partitions: 1
   topicName: SINK.TOPIC
 
-  ---
+---
 
 apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
