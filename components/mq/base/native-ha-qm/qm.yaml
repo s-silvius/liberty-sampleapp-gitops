@@ -51,8 +51,10 @@ spec:
     resources:
       limits:
         memory: 2Gi
+        cpu: 0.1
       requests:
         memory: 1Gi
+        cpu: 0.1
     mqsc:
       - configMap:
           name: native-ha-qm-configmap
@@ -82,4 +84,4 @@ spec:
     enabled: true
     manualConfig:
       secret:
-        name: mqwebuser-secret 
+        name: mqwebuser-secret
